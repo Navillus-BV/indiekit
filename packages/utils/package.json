@@ -1,0 +1,23 @@
+{
+  "name": "@indiekit/utils",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "directory": "packages/wm-verify",
+    "url": "https://github.com/navillus-bv/indiekit.git"
+  },
+  "scripts": {
+    "clean": "rimraf dist && rimraf tsconfig.tsbuildinfo",
+    "prepack": "yarn build",
+    "build": "yarn clean && yarn compile",
+    "compile": "tsc --build && cp \"./package.json\" ./dist/",
+    "test": "echo 'no tests'",
+    "lint": "eslint \"./src/**/*.{ts,tsx}\" --max-warnings=0"
+  },
+  "dependencies": {
+    "@tsconfig/recommended": "^1.0.1"
+  }
+}
