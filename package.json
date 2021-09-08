@@ -1,0 +1,14 @@
+{
+  "name": "indiekit",
+  "version": "0.0.1",
+  "description": "Toolkit for the indie web",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Navillus-BV/indiekit.git"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "license": "MIT",
+  "private": true
+}
