@@ -1,19 +1,17 @@
 {
-    "compilerOptions": {
-        "baseUrl": "./packages",
-        "paths": {
-            "@namespace/core/*": [
-                "wm-verify/src/*"
-            ]
-        }
+  "compilerOptions": {
+    "baseUrl": "./packages",
+    "paths": {
+      "@namespace/core/*": ["wm-verify/src/*"]
+    }
+  },
+  "files": [],
+  "references": [
+    {
+      "path": "packages/utils"
     },
-    "files": [],
-    "references": [
-        {
-            "path": "packages/utils"
-        },
-        {
-            "path": "packages/wm-verify"
-        }
-    ]
+    {
+      "path": "packages/wm-verify"
+    }
+  ]
 }

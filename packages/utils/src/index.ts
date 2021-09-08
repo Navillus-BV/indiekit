@@ -1,3 +1,3 @@
 export function helloUtils() {
-  console.log("Hello, utils");
+  console.log('Hello, utils');
 }

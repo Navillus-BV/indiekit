@@ -8,12 +8,18 @@
   "scripts": {
     "prepare": "node ./configure-references.js",
     "build": "lerna run build --stream",
-    "lint": "lerna run lint --stream --parallel",
+    "lint": "eslint \"packages/**/*.ts\"",
+    "format": "prettier -w .",
     "test": "yarn jest --coverage"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.31.0",
+    "@typescript-eslint/parser": "^4.31.0",
     "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "lerna": "^4.0.0",
+    "prettier": "^2.3.2",
     "rimraf": "^3.0.2",
     "typescript": "^4.4.2",
     "uvu": "^0.5.1"
