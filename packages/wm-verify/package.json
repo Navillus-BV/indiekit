@@ -14,7 +14,7 @@
     "prepack": "yarn build",
     "build": "yarn clean && yarn compile",
     "compile": "tsc --build && cp \"./package.json\" ./dist/",
-    "test": "echo 'no tests'",
+    "test": "uvu -r ts-node/register tests",
     "lint": "eslint \"./src/**/*.{ts,tsx}\" --max-warnings=0"
   },
   "dependencies": {
